@@ -13,6 +13,8 @@
 		D278BCFF1E5C2C1A00B411C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D278BCFD1E5C2C1A00B411C2 /* Main.storyboard */; };
 		D278BD011E5C2C1A00B411C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D278BD001E5C2C1A00B411C2 /* Assets.xcassets */; };
 		D278BD041E5C2C1A00B411C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D278BD021E5C2C1A00B411C2 /* LaunchScreen.storyboard */; };
+		D278BD0D1E5C2FE400B411C2 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D278BD0C1E5C2FE400B411C2 /* MainViewController.m */; };
+		D278BD101E5C350400B411C2 /* MainClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = D278BD0F1E5C350400B411C2 /* MainClockView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		D278BD001E5C2C1A00B411C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D278BD031E5C2C1A00B411C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D278BD051E5C2C1A00B411C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D278BD0B1E5C2FE400B411C2 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		D278BD0C1E5C2FE400B411C2 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		D278BD0E1E5C350400B411C2 /* MainClockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainClockView.h; sourceTree = "<group>"; };
+		D278BD0F1E5C350400B411C2 /* MainClockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainClockView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +48,8 @@
 		D278BCE81E5C2C1A00B411C2 = {
 			isa = PBXGroup;
 			children = (
+				D278BD0E1E5C350400B411C2 /* MainClockView.h */,
+				D278BD0F1E5C350400B411C2 /* MainClockView.m */,
 				D278BCF31E5C2C1A00B411C2 /* ObjectiveC_Example2 */,
 				D278BCF21E5C2C1A00B411C2 /* Products */,
 			);
@@ -63,6 +71,8 @@
 				D278BCFA1E5C2C1A00B411C2 /* ViewController.h */,
 				D278BCFB1E5C2C1A00B411C2 /* ViewController.m */,
 				D278BCFD1E5C2C1A00B411C2 /* Main.storyboard */,
+				D278BD0B1E5C2FE400B411C2 /* MainViewController.h */,
+				D278BD0C1E5C2FE400B411C2 /* MainViewController.m */,
 				D278BD001E5C2C1A00B411C2 /* Assets.xcassets */,
 				D278BD021E5C2C1A00B411C2 /* LaunchScreen.storyboard */,
 				D278BD051E5C2C1A00B411C2 /* Info.plist */,
@@ -110,6 +120,7 @@
 				TargetAttributes = {
 					D278BCF01E5C2C1A00B411C2 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = BRDXY5TTF4;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -152,7 +163,9 @@
 			files = (
 				D278BCFC1E5C2C1A00B411C2 /* ViewController.m in Sources */,
 				D278BCF91E5C2C1A00B411C2 /* AppDelegate.m in Sources */,
+				D278BD101E5C350400B411C2 /* MainClockView.m in Sources */,
 				D278BCF61E5C2C1A00B411C2 /* main.m in Sources */,
+				D278BD0D1E5C2FE400B411C2 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +285,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BRDXY5TTF4;
 				INFOPLIST_FILE = ObjectiveC_Example2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "favorie.ObjectiveC-Example2";
@@ -283,6 +297,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BRDXY5TTF4;
 				INFOPLIST_FILE = ObjectiveC_Example2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "favorie.ObjectiveC-Example2";
