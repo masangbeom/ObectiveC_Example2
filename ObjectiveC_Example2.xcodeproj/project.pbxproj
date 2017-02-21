@@ -15,6 +15,7 @@
 		D278BD041E5C2C1A00B411C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D278BD021E5C2C1A00B411C2 /* LaunchScreen.storyboard */; };
 		D278BD0D1E5C2FE400B411C2 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D278BD0C1E5C2FE400B411C2 /* MainViewController.m */; };
 		D278BD101E5C350400B411C2 /* MainClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = D278BD0F1E5C350400B411C2 /* MainClockView.m */; };
+		D278BD121E5C379500B411C2 /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = D278BD111E5C379500B411C2 /* clock.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +31,9 @@
 		D278BD051E5C2C1A00B411C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D278BD0B1E5C2FE400B411C2 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		D278BD0C1E5C2FE400B411C2 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		D278BD0E1E5C350400B411C2 /* MainClockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainClockView.h; sourceTree = "<group>"; };
-		D278BD0F1E5C350400B411C2 /* MainClockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainClockView.m; sourceTree = "<group>"; };
+		D278BD0E1E5C350400B411C2 /* MainClockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainClockView.h; path = ../MainClockView.h; sourceTree = "<group>"; };
+		D278BD0F1E5C350400B411C2 /* MainClockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainClockView.m; path = ../MainClockView.m; sourceTree = "<group>"; };
+		D278BD111E5C379500B411C2 /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,8 +50,6 @@
 		D278BCE81E5C2C1A00B411C2 = {
 			isa = PBXGroup;
 			children = (
-				D278BD0E1E5C350400B411C2 /* MainClockView.h */,
-				D278BD0F1E5C350400B411C2 /* MainClockView.m */,
 				D278BCF31E5C2C1A00B411C2 /* ObjectiveC_Example2 */,
 				D278BCF21E5C2C1A00B411C2 /* Products */,
 			);
@@ -66,6 +66,9 @@
 		D278BCF31E5C2C1A00B411C2 /* ObjectiveC_Example2 */ = {
 			isa = PBXGroup;
 			children = (
+				D278BD111E5C379500B411C2 /* clock.png */,
+				D278BD0E1E5C350400B411C2 /* MainClockView.h */,
+				D278BD0F1E5C350400B411C2 /* MainClockView.m */,
 				D278BCF71E5C2C1A00B411C2 /* AppDelegate.h */,
 				D278BCF81E5C2C1A00B411C2 /* AppDelegate.m */,
 				D278BCFA1E5C2C1A00B411C2 /* ViewController.h */,
@@ -148,6 +151,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D278BD121E5C379500B411C2 /* clock.png in Resources */,
 				D278BD041E5C2C1A00B411C2 /* LaunchScreen.storyboard in Resources */,
 				D278BD011E5C2C1A00B411C2 /* Assets.xcassets in Resources */,
 				D278BCFF1E5C2C1A00B411C2 /* Main.storyboard in Resources */,

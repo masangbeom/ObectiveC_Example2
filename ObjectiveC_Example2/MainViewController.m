@@ -42,16 +42,16 @@
     
     // 현재시간을 화면에 출력합니다.
     clockDisplay.text = [NSString stringWithFormat:@"%02d:%02d:%02d",phour, pminute, psecond];
-//    
-//    pClockView.pHour = phour;
-//    pClockView.pMinute = pminute;
-//    pClockView.pSecond = psecond;
-//    // 아날라고 시계뷰를 다시 그립니다.
-//    [pClockView setNeedsDisplay];
-//    
-//    if (self.pAlarmOnOff == YES)
-//        if (self.pAlarmHour == phour && self.pAlarmMinute == pminute && psecond == 0)
-//            [self messageDisplay];
+    
+    pClockView.pHour = phour;
+    pClockView.pMinute = pminute;
+    pClockView.pSecond = psecond;
+    // 아날라고 시계뷰를 다시 그립니다.
+    [pClockView setNeedsDisplay];
+    
+    if (self.pAlarmOnOff == YES)
+        if (self.pAlarmHour == phour && self.pAlarmMinute == pminute && psecond == 0)
+            [self messageDisplay];
 }
 
 

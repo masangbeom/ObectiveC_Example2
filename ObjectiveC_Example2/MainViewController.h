@@ -7,13 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MainClockView.h"
+
 
 @interface MainViewController : UIViewController
 {
     NSTimer *timer;
-    IBOutlet UILabel *clockDisplay; // 디지털시계를 표현할 Label참조 변수
+    
+    IBOutlet UILabel *clockDisplay;
+    IBOutlet MainClockView *pClockView;
+    
 }
 
--(void) onTimer; // 타이머 이벤트 핸들러
+-(void)onTimer;                    // 타이머 이벤트 핸들러
+@property  Boolean pAlarmOnOff;    // 알람 여부
+@property  int pAlarmHour;         // 알람 시간
+@property  int pAlarmMinute;       // 알람 분
 
 @end
