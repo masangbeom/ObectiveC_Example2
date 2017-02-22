@@ -46,7 +46,7 @@
     pClockView.pHour = phour;
     pClockView.pMinute = pminute;
     pClockView.pSecond = psecond;
-    // 아날라고 시계뷰를 다시 그립니다.
+    // 아날로그 시계뷰를 다시 그립니다.
     [pClockView setNeedsDisplay];
     
     if (self.pAlarmOnOff == YES)
@@ -55,19 +55,11 @@
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)messageDisplay{
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"알람시계" message:@"약속시간입니다." preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction*defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){}];
+    [alert addAction:defaultAction];
+    [self presentViewController:alert animated:YES completion:nil];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
